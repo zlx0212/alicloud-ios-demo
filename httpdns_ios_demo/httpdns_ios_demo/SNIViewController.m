@@ -28,7 +28,7 @@
     HttpDnsService *httpdns = [HttpDnsService sharedInstance];
     
     // 需要设置SNI的URL
-    NSString *originalUrl = @"https://dou.bz/23o8PS";
+    NSString *originalUrl = @"https://www.yohobuy.com";
     NSURL *url = [NSURL URLWithString:originalUrl];
     self.request = [[NSMutableURLRequest alloc] initWithURL:url];
     NSString *ip = [httpdns getIpByHostAsync:url.host];
